@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>Quantum Interview Application</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet"
+        href="style.css" />
+  <script src="main.js"
+          type='module'
+          defer></script>
+</head>
+
+<body>
+
+  <header>
+
+    <navbar id='navbar'>
+
+      <div class="logo font-primary">LOGO</div>
+
+      
+   
+        <ul id='navLinks' class='nav-links-container'>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Platforms</a></li> 
+          <li><a href="#">Contact</a></li>
+          <li><button id='toggleLanguageButton'>
+
+            <span>EN</span>
+            <i class="bi bi-chevron-down"></i></button>
+            <ul id='navLanguages' class='nav-languages'>
+
+              <li>DE</li>
+              <li>ES</li>
+              <li>FR</li>
+              <li>RO</li>
+              <li>RU</li>
+              
+
+            </ul>
+          
+          </li>
+
+          <button id='in-menu-signin-button' class='button'>SING IN FOR FREE</button>
+         
+         </ul>
+
+         
+
+     
+       
+
+      <button id='toggleMenu' class="toggle-menu"><i class="bi bi-list"></i></button>
+
+
+
+    </navbar>
+
+  </header>
+
+  <main>
+
+    <section class="landing-page">
+      <div class="container">
+        <div class="first-section-info">
+          <h1 class="title">Trade everywhere. Invest here!</h1>
+          <p class="detailed-info">
+            We provide only the best trading software. The trading terminal
+            MetaTrader4 is the most popular and convenient platform for access
+            to global exchanges. You can work anywhere.
+          </p>
+          <button class="button">START TRADING</button>
+          <img class='chart'
+               src='assets/Invest-chart.svg'
+               alt='Invest Chart'>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="getting-started">
+      <div class="container">
+        <div class="title">
+          <div>Getting Started Is</div>
+          <div class='fast-and-easy relative'> Fast & Easy <div class='title-background'>&nbsp;</div>
+          </div>
+
+        </div>
+        <div class="second-section-info">
+          <span class="count">01.</span>
+          <h3>Register</h3>
+          <p class="detailed-info">
+            Complete the simple registration to get your trading credentials.
+          </p>
+        </div>
+        <div class="dashed-map"></div>
+        <div class="second-section-info">
+          <span class="count">02.</span>
+          <h3>Verification</h3>
+          <p class="detailed-info">
+            Big Invest is required to verify your identity, upload your
+            documents quickly and get approved in minutes.
+          </p>
+        </div>
+        <div class="dashed-map"></div>
+        <div class="second-section-info">
+          <span class="count">03.</span>
+          <h3>Deposit funds</h3>
+          <p class="detailed-info">
+            Big Invest accepts credit cards and bank wires. Just use the
+            secure deposit form and follow the steps.
+          </p>
+        </div>
+        <div class="dashed-map"></div>
+        <div class="second-section-info">
+          <span class="count">04.</span>
+          <h3>Start trading</h3>
+          <p class="detailed-info">
+            Once your deposit has been credited, you can begin trading
+            instantly. In no time you will see profits rolling into your
+            account.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id='testimonials'
+             class="container">
+      <h2 class='title'>People love </br> <mark>Big Invest</mark></h2>
+      <div class="slider">
+
+        <div id="slides">
+
+        </div>
+        <div id='slider-footer'>
+          <button id='prev-btn'
+                  class="slide-btn"><i class="bi bi-chevron-left"></i></button>
+          <div id="counter"
+               class='count'>
+
+          </div>
+          <button id='next-btn'
+                  class="slide-btn"><i class="bi bi-chevron-right"></i></button>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section class="FAQ">
+      <div id="faq-container"
+           class='container'>
+        <!-- FAQ items will be inserted dinamically here by JavaScript -->
+      </div>
+
+    </section>
+
+
+    <section class="contact">
+      <div class='container'>
+        <div id='contact-general-info'>
+
+          <h2 class='title'>Contact us!</h2>
+          <p>The support staff and customer service are available to help you with any questions or needs you might
+            have. Just drop us a line.</p>
+          <p>This site is owned and operated by Kode Tech Solutions LTD</p>
+          <div class='contact-info'>
+            <p class='contact-method'>Phone:</p>
+            <span class='contact-address'>442038857261</span>
+          </div>
+          <div class='contact-info'>
+            <p class='contact-method'>Email:</p>
+            <span class='contact-address'>help@google.com</span>
+          </div>
+          <div class='contact-info'>
+            <p class='contact-method'>Address:</p>
+            <span class='contact-address'>Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic of the
+              Marshall Islands, MH 96960 </span>
+          </div>
+
+
+        </div>
+
+        <div class='form-container'>
+
+          <form id='form'
+                action=''>
+
+            <div class='input-wrapper'>
+              <input type="text"
+                     class='form-input'
+                     placeholder='Name'>
+                     <div id='name-error'
+                   class='form-error'></div>
+            </div>
+
+            <div class='input-wrapper'>
+              <input type="text"
+                     class='form-input'
+                     id='email-input'
+                     placeholder='Email'>
+              <div id='email-error'
+                   class='form-error'></div>
+            </div>
+
+
+
+            <div class='input-wrapper'>
+              <textarea id='form-message'
+                        type="text"
+                        placeholder='Message'></textarea>
+            </div>
+
+            <button id='form-btn'
+                    type='submit'
+                    class='button'>SEND</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div id='footer-container'
+         class='container'>
+
+      <div id='footer-logo'
+           class='logo'>
+        LOGO
+      </div>
+
+
+      <div id='platform-links'>
+
+        <a href="#">About us</a>
+        <a href="#">Instructions</a>
+        <a href="#">Platforms</a>
+        <a href="#">Contact us</a>
+        <a href="#">Sign in</a>
+        <a href="#">Sing up for free</a>
+
+      </div>
+
+      <div id='high-risk-warning'>
+
+        <p class='footer-titles'>Information and high risk warning:</p>
+        <p class='info'>Trading with foreign exchange (FX), contract for differences (CFDs) and precious metals carries
+          a high level of risk that may not be suitable for all investors. Leverage creates additional risk and loss
+          exposure. Before you decide to trade foreign exchange or contract for differences, carefully consider your
+          investment objectives, experience level, and risk tolerance.</p>
+
+      </div>
+
+      <div id='legal-desclaimer'>
+
+        <div class='footer-titles'>Legal disclaimer:</div>
+        <p class='info'>Forex trading entails significant risks and is not appropriate for all investors. The
+          possibility of incurring substantial losses should be taken into account. It is therefore important to
+          understand the possible consequences of investing. Traders should weigh their earning potential against the
+          risks involved and act accordingly. Interactive Trade Ltd operating under brand and using domenLink domain
+          within the European Economic Area.</p>
+
+      </div>
+
+      <div class='terms-and-policies'>
+
+        <p class='info'>Copyright 2020, All Right Reserved</p>
+        <p><a class='links info'
+             href="">Terms and Conditions</a></p>
+        <p><a class='links info'
+             href="">Privacy Policy</a></p>
+        <p><a class='links info'
+             href="">Risk Warnings</a></p>
+        <p><a class='links info'
+             href="">Anti-Money Laundering</a></p>
+
+      </div>
+
+
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
