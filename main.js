@@ -8,7 +8,9 @@ toggleMenu.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-const toggleLanguageButton = document.getElementById('toggleLanguageButton');
+const toggleLanguageButton = document.getElementById(
+  'inMenuToggleLanguageButton'
+);
 const navLanguages = document.getElementById('navLanguages');
 
 toggleLanguageButton.addEventListener('click', () => {
@@ -20,7 +22,7 @@ let currentIdx = 0;
 function renderTestimonial() {
   const testimonial = testimonials[currentIdx];
   const createTestimonialHtml = `
-  <img class="avatar" src="${testimonial.img}" alt="${testimonial.fullName}" />
+  <div class="avatar"><img class="avatar-img" src="${testimonial.img}" alt="${testimonial.fullName}" /></div>
   <div class="name">${testimonial.fullName}</div>
   <div class="position">${testimonial.position}</div>
   <img id="commas-element" src="/assets/commas.png" alt="commas" />

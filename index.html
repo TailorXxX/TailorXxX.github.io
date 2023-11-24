@@ -21,42 +21,55 @@
 
     <navbar id='navbar'>
 
-      <div class="logo font-primary">LOGO</div>
+      <div class="logo">
+        LOGO
+      </div>
 
       
    
-        <ul id='navLinks' class='nav-links-container'>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Platforms</a></li> 
-          <li><a href="#">Contact</a></li>
-          <li><button id='toggleLanguageButton'>
+      <ul id='navLinks' class='nav-links-container'>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Platforms</a></li> 
+        <li><a href="#">Contact</a></li>
+       <li class='relative'>
+        <button id='inMenuToggleLanguageButton' class='toggle-lang-btn relative'>
 
-            <span>EN</span>
-            <i class="bi bi-chevron-down"></i></button>
-            <ul id='navLanguages' class='nav-languages'>
-
-              <li>DE</li>
-              <li>ES</li>
-              <li>FR</li>
-              <li>RO</li>
-              <li>RU</li>
-              
-
-            </ul>
-          
-          </li>
-
-          <button id='in-menu-signin-button' class='button'>SING IN FOR FREE</button>
-         
-         </ul>
+          <span>EN</span>
+          <i class="bi bi-chevron-down"></i></button>
+           
+          <ul id='navLanguages' class='nav-languages relative'>
+  
+                <li>DE</li>
+                <li>ES</li>
+                <li>FR</li>
+                <li>RO</li>
+                <li>RU</li>
+                
+  
+              </ul>
+            
+            </li>
+  
+            <button id='inMenuSignInButton' class='button'>
+              SIGN IN FOR FREE
+            </button>
+           
+           </ul>
+       </li>
 
          
 
      
-       
-
-      <button id='toggleMenu' class="toggle-menu"><i class="bi bi-list"></i></button>
+       <div id='tablet-navbar-layout'>
+        <button id='outOfMenuSignInButton' class='button'>
+          SIGN IN FOR FREE
+        </button>
+        <button id='toggleMenu' class="toggle-menu">
+        <i class="bi bi-list"></i>
+        </button>
+       </div>
+      
 
 
 
