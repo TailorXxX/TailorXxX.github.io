@@ -17,6 +17,15 @@ toggleLanguageButton.addEventListener('click', () => {
   navLanguages.classList.toggle('active');
 });
 
+const outOfMenuToggleLanguageButton = document.getElementById(
+  'outOfMenuToggleLanguageButton'
+);
+const outNavLanguages = document.getElementById('outNavLanguages');
+
+outOfMenuToggleLanguageButton.addEventListener('click', () => {
+  outNavLanguages.classList.toggle('active');
+});
+
 let currentIdx = 0;
 
 function renderTestimonial() {

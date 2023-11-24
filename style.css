@@ -89,6 +89,19 @@ a {
   padding: 10px 16px;
 }
 
+#outOfMenuToggleLanguageButton {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  border: 1px var(--black) solid;
+  border-radius: 60px;
+  padding: 10px 16px;
+}
+
 .detailed-info {
   font-family: var(--font-secondary);
   color: var(--font-secondary-color);
@@ -169,11 +182,16 @@ ul {
     padding: 15px 20px;
   }
 
+  #outNavLanguages {
+    display: none;
+  }
+
   .nav-links-container {
     display: none;
   }
 
   .nav-links-container.active {
+    position: absolute;
     padding: 5px;
     background-color: #fff;
     border-radius: 3px;
@@ -184,6 +202,7 @@ ul {
     top: 100%;
     z-index: 100;
     gap: 5px;
+    right: 0;
   }
 
   .nav-languages {
@@ -191,13 +210,18 @@ ul {
   }
 
   .nav-languages.active {
+    background-color: #fff;
     display: flex;
-    border: 1px solid red;
+    position: absolute;
     flex-direction: column;
     padding: 17px;
   }
 
   #outOfMenuSignInButton {
+    display: none;
+  }
+
+  #outOfMenuToggleLanguageButton {
     display: none;
   }
 
@@ -504,9 +528,16 @@ ul {
     flex-direction: row;
   }
 
-  #tablet-navbar-layout {
+  #tabletDesktopNavbarLayout {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .tabletDesktopNavbarLayout {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
   }
@@ -519,6 +550,14 @@ ul {
     height: 40px;
     width: 150px;
     /* place-self: center;?? */
+  }
+
+  #outOfMenuToggleLanguageButton {
+    display: none;
+  }
+
+  #outNavLanguages {
+    display: none;
   }
 
   #inMenuSignInButton {
@@ -582,21 +621,20 @@ ul {
     position: relative;
   }
 
+  #navLanguages {
+    display: none;
+  }
+
   #toggleMenu {
     display: none;
   }
 
+  #outNavLanguages {
+    position: absolute;
+  }
+
   #inMenuToggleLanguageButton {
-    background-color: transparent;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 0;
-    cursor: pointer;
-    position: relative;
-    border: 1px var(--black) solid;
-    border-radius: 60px;
-    padding: 10px 16px;
+    display: none;
   }
   .nav-languages {
     display: none;
@@ -607,7 +645,6 @@ ul {
     background-color: #fff;
     flex-direction: column;
     padding: 17px;
-    position: absolute;
   }
 
   #inMenuSignInButton {
