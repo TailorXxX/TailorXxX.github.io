@@ -123,7 +123,7 @@ function setupEventListeners(container) {
 }
 
 function initializeFAQs() {
-  const faqContainer = document.getElementById('faq-container');
+  const faqContainer = document.getElementById('faqContainer');
   appendFAQItems(faqs, faqContainer);
   setupEventListeners(faqContainer);
 }

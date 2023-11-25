@@ -25,68 +25,79 @@
         LOGO
       </div>
 
-      
-   
-      <ul id='navLinks' class='nav-links-container'>
+
+
+      <ul id='navLinks'
+          class='nav-links-container'>
         <li><a href="#">How it works</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Platforms</a></li> 
+        <li><a href="#">Instructions</a></li>
+        <li><a href="#">Accounts</a></li>
+        <li><a href="#">Platforms</a></li>
         <li><a href="#">Contact</a></li>
-       <li class='relative'>
-        <button id='inMenuToggleLanguageButton' class='toggle-lang-btn relative'>
-
-          <span>EN</span>
-          <i class="bi bi-chevron-down"></i></button>
-           
-          <ul id='navLanguages' class='nav-languages'>
-  
-                <li>DE</li>
-                <li>ES</li>
-                <li>FR</li>
-                <li>RO</li>
-                <li>RU</li>
-                
-  
-              </ul>
-            
-            </li>
-  
-            <button id='inMenuSignInButton' class='button'>
-              SIGN IN FOR FREE
-            </button>
-           
-           </ul>
-       </li>
-
-         
-
-     
-       <ul id='tabletDesktopNavbarLayout' class='relative'>
-        <li class='relative tabletDesktopNavbarLayout'>
-          <button id='outOfMenuToggleLanguageButton' class='toggle-lang-btn relative'>
+        <li class='relative'>
+          <button id='inMenuToggleLanguageButton'
+                  class='toggle-lang-btn relative'>
 
             <span>EN</span>
             <i class="bi bi-chevron-down"></i></button>
-            <ul id='outNavLanguages' class='nav-languages relative'>
-    
-              <li>DE</li>
-              <li>ES</li>
-              <li>ES</li>
-              <li>FR</li>
-              <li>RO</li>
-              <li>RU</li>
-              
-  
-            </ul>
-          <button id='outOfMenuSignInButton' class='button'>
+
+          <ul id='navLanguages'
+              class='nav-languages'>
+
+            <li>DE</li>
+            <li>ES</li>
+            <li>FR</li>
+            <li>RO</li>
+            <li>RU</li>
+
+
+          </ul>
+
+        </li>
+
+        <button id='inMenuSignInButton'
+                class='button'>
+          SIGN IN FOR FREE
+        </button>
+
+      </ul>
+      </li>
+
+
+
+
+      <ul id='tabletDesktopNavbarLayout'
+          class='relative'>
+        <li class='relative tabletDesktopNavbarLayout'>
+          <button id='outOfMenuToggleLanguageButton'
+                  class='toggle-lang-btn relative'>
+
+            <span>EN</span>
+            <i class="bi bi-chevron-down"></i></button>
+          <ul id='outNavLanguages'
+              class='nav-languages relative'>
+
+            <li>DE</li>
+            <li>ES</li>
+            <li>ES</li>
+            <li>FR</li>
+            <li>RO</li>
+            <li>RU</li>
+
+
+          </ul>
+          <button id='outOfMenuSignInButton'
+                  class='button'>
             SIGN IN FOR FREE
           </button>
-          <button id='toggleMenu' class="toggle-menu">
-          <i class="bi bi-list"></i>
+          <button id='toggleMenu'
+                  class="toggle-menu">
+            <i class="bi bi-list"></i>
           </button>
         </li>
-       </ul>
-      
+      </ul>
+
 
 
 
@@ -96,8 +107,9 @@
 
   <main>
 
-    <section class="landing-page">
-      <div class="container">
+    <section class="landing-page colored-background">
+      <div id='landing-page-container'
+           class="container">
         <div class="first-section-info">
           <h1 class="title">Trade everywhere. Invest here!</h1>
           <p class="detailed-info">
@@ -106,58 +118,89 @@
             to global exchanges. You can work anywhere.
           </p>
           <button class="button">START TRADING</button>
-          <img class='chart'
-               src='assets/Invest-chart.svg'
-               alt='Invest Chart'>
+
         </div>
+        <img class='chart'
+             src='assets/Invest-chart.svg'
+             alt='Invest Chart'>
 
       </div>
     </section>
 
 
     <section class="getting-started">
-      <div class="container">
+      <div class="container ">
         <div class="title">
           <div>Getting Started Is</div>
-          <div class='fast-and-easy relative'> Fast & Easy <div class='title-background'>&nbsp;</div>
+          <div class='fast-and-easy relative'>
+            Fast & Easy
           </div>
 
         </div>
-        <div class="second-section-info">
-          <span class="count">01.</span>
-          <h3>Register</h3>
-          <p class="detailed-info">
-            Complete the simple registration to get your trading credentials.
-          </p>
+
+        <div class='getting-started-steps-container'>
+           
+          <div class="getting-started-steps">
+            <div class='steps'>
+              <span class="count">01.</span>
+              <span class='steps-title'>Register</span>
+              <p class="detailed-info">
+                Complete the simple registration to get your trading credentials.
+              </p>
+            </div>
+            
+            
+            <div class='dotted-line'></div>
+          </div>
+
+          
+
+          <div class="getting-started-steps">
+            <div class='steps'>
+              <span class="count">02.</span>
+            <div class='steps-title'>Verification</div>
+            <p class="detailed-info">
+              Big Invest is required to verify your identity, upload your
+              documents quickly and get approved in minutes.
+            </p>
+            </div>
+            
+            <div class='dotted-line'></div>
+          </div>
+
+          
+
+          <div class="getting-started-steps">
+            <div class='steps'>
+              <span class="count">03.</span>
+            <div class='steps-title'>Deposit funds</div>
+            <p class="detailed-info">
+              Big Invest accepts credit cards and bank wires. Just use the
+              secure deposit form and follow the steps.
+            </p>
+            </div>
+            
+            <div class='dotted-line'></div>
+          </div>
+
+          
+
+          <div class="getting-started-steps">
+            <div class='steps'>
+              <span class="count">04.</span>
+            <div class='steps-title'>Start trading</div>
+            <p class="detailed-info">
+              Once your deposit has been credited, you can begin trading
+              instantly. In no time you will see profits rolling into your
+              account.
+            </p>
+            </div>
+            
+          </div>
+          
         </div>
-        <div class="dashed-map"></div>
-        <div class="second-section-info">
-          <span class="count">02.</span>
-          <h3>Verification</h3>
-          <p class="detailed-info">
-            Big Invest is required to verify your identity, upload your
-            documents quickly and get approved in minutes.
-          </p>
-        </div>
-        <div class="dashed-map"></div>
-        <div class="second-section-info">
-          <span class="count">03.</span>
-          <h3>Deposit funds</h3>
-          <p class="detailed-info">
-            Big Invest accepts credit cards and bank wires. Just use the
-            secure deposit form and follow the steps.
-          </p>
-        </div>
-        <div class="dashed-map"></div>
-        <div class="second-section-info">
-          <span class="count">04.</span>
-          <h3>Start trading</h3>
-          <p class="detailed-info">
-            Once your deposit has been credited, you can begin trading
-            instantly. In no time you will see profits rolling into your
-            account.
-          </p>
-        </div>
+
+
       </div>
     </section>
 
@@ -186,17 +229,18 @@
     </section>
 
 
-    <section class="FAQ">
-      <div id="faq-container"
-           class='container'>
-        <!-- FAQ items will be inserted dinamically here by JavaScript -->
+    <section id='FAQ' class='container'>
+      <h2 class='title'>Frequently asked </br>questions</h2>
+      <div id="faqContainer"
+           >
+       
       </div>
 
     </section>
 
 
-    <section class="contact">
-      <div class='container'>
+    <section class="contact colored-background">
+      <div id='contactContainer' class='container'>
         <div id='contact-general-info'>
 
           <h2 class='title'>Contact us!</h2>
@@ -229,7 +273,7 @@
               <input type="text"
                      class='form-input'
                      placeholder='Name'>
-                     <div id='name-error'
+              <div id='name-error'
                    class='form-error'></div>
             </div>
 
