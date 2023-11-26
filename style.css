@@ -17,6 +17,7 @@
   --background-color: #edeffe;
   --focus-color: #828282;
   --disabled-color: #828282;
+  --success-color: #0eac00;
   --error-color: #eb5757;
   --white: #fff;
   --black: #000;
@@ -49,6 +50,10 @@ footer {
 
 a {
   text-decoration: none;
+}
+
+#desktopSlideButton {
+  display: none;
 }
 
 .container {
@@ -226,6 +231,40 @@ a {
   color: var(--disabled-color);
 }
 
+#employeeDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#employeeTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.position {
+  color: var(--focus-color);
+}
+
+#testimonial {
+  text-align: center;
+}
+
+#testimonial p {
+  margin: 0;
+  padding: 0;
+}
+
+#testimony {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .count {
   color: var(--default-color);
   font-size: 15px;
@@ -345,6 +384,14 @@ a {
   gap: 5px;
 }
 
+.invalid {
+  border: 1px var(--error-color) solid !important;
+}
+
+.valid {
+  border: 1px var(--success-color) solid !important;
+}
+
 .input-wrapper {
   width: 80%;
   display: flex;
@@ -429,8 +476,17 @@ a {
   color: var(--disabled-color);
 }
 
+#commas-element {
+  width: 40px;
+  margin: 30px 0;
+}
+
 ul {
   list-style: none;
+}
+
+#testimonials mark {
+  background-color: var(--background-color);
 }
 
 @media only screen and (max-width: 320px) {
@@ -521,7 +577,6 @@ ul {
   #slider-footer {
     display: flex;
     justify-content: space-between;
-
     width: 100%;
     align-items: center;
   }
@@ -537,14 +592,6 @@ ul {
     gap: 8px;
     transition: transform 0.3s ease;
     text-align: center;
-  }
-
-  #testimonial {
-    font-size: 24px;
-  }
-
-  #commas-element {
-    margin: 10px 0;
   }
 
   .slide {
@@ -810,6 +857,32 @@ ul {
   .footer-titles {
     text-align: center;
   }
+
+  #slider-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  #slider-footer .slide-btn {
+    position: absolute;
+    top: 40%;
+  }
+
+  #slider-footer #prevButton {
+    left: 0;
+  }
+
+  #slider-footer #nextButton {
+    right: 0;
+  }
+
+  #testimony {
+    padding: 0 50px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -817,6 +890,11 @@ ul {
     display: flex;
     padding: 0 40px 0 80px;
     align-items: center;
+  }
+
+  #outNavLanguages {
+    position: absolute;
+    top: 100%;
   }
 
   #tabletDesktopNavbarLayout {
@@ -883,6 +961,76 @@ ul {
     font-size: 2.2rem;
     position: relative;
     width: 80%;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  #desktopSlideButton {
+    display: flex;
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #sliderInfo {
+    place-self: start;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  #testimonial {
+    text-align: left;
+  }
+
+  .slider {
+    flex: 1;
+  }
+
+  #slider-footer {
+    margin: 10px 0 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #slider-footer > .slide-btn {
+    display: none;
+  }
+
+  #desktopSlideButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  #employeeDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  #testimony {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-top: 20px;
+  }
+
+  #commas-element {
+    margin: 0 20px 0 0;
   }
 
   #landingPageContainer {

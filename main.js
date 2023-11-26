@@ -31,11 +31,22 @@ let currentIdx = 0;
 function renderTestimonial() {
   const testimonial = testimonials[currentIdx];
   const createTestimonialHtml = `
-  <div class="avatar"><img class="avatar-img" src="${testimonial.img}" alt="${testimonial.fullName}" /></div>
-  <div class="name">${testimonial.fullName}</div>
-  <div class="position">${testimonial.position}</div>
-  <img id="commas-element" src="/assets/commas.png" alt="commas" />
-  <p id="testimonial ">${testimonial.testimonial}</p>
+  <div id="employeeDetails">
+
+    <div class="avatar"><img class="avatar-img" src="${testimonial.img}" alt="${testimonial.fullName}" /></div>
+    
+    <div id="employeeTitle">
+      <div class="name">${testimonial.fullName}</div>
+      <div class="position">${testimonial.position}</div>
+    </div>
+
+  </div>
+  
+  <div id="testimony">
+    <img id="commas-element" src="/assets/commas.png" alt="commas" />
+    <div id="testimonial"><p>${testimonial.testimonial}</p></div>
+  </div>
+  
   `;
   document.getElementById('slides').innerHTML = createTestimonialHtml;
   document.getElementById('counter').innerText = `0${currentIdx + 1} / 0${
@@ -43,12 +54,22 @@ function renderTestimonial() {
   }`;
 }
 
-document.getElementById('prev-btn').addEventListener('click', () => {
+document.getElementById('prevButton').addEventListener('click', () => {
   currentIdx = (currentIdx - 1 + testimonials.length) % testimonials.length;
   renderTestimonial();
 });
 
-document.getElementById('next-btn').addEventListener('click', () => {
+document.getElementById('nextButton').addEventListener('click', () => {
+  currentIdx = (currentIdx + 1) % testimonials.length;
+  renderTestimonial();
+});
+
+document.getElementById('desktopPrevButton').addEventListener('click', () => {
+  currentIdx = (currentIdx - 1 + testimonials.length) % testimonials.length;
+  renderTestimonial();
+});
+
+document.getElementById('desktopNextButton').addEventListener('click', () => {
   currentIdx = (currentIdx + 1) % testimonials.length;
   renderTestimonial();
 });
@@ -139,15 +160,27 @@ const validateEmail = email => {
     );
 };
 
+const emailInput = document.getElementById('email-input');
+
 form.addEventListener('submit', e => {
   e.preventDefault();
 
-  const emailInput = document.getElementById('email-input');
   const emailError = document.getElementById('email-error');
 
   if (emailInput.value == '' || !validateEmail(emailInput.value)) {
     emailError.innerHTML = 'Invalid email';
+    emailInput.classList.add('invalid');
+  } else {
+    emailInput.classList.remove('invalid');
   }
 
   console.log(e.target);
+});
+
+emailInput.addEventListener('keyup', e => {
+  if (validateEmail(emailInput.value)) {
+    emailInput.classList.add('valid');
+  } else {
+    emailInput.classList.remove('valid');
+  }
 });
