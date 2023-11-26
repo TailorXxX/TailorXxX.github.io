@@ -858,6 +858,10 @@ ul {
     text-align: center;
   }
 
+  #employeeTitle {
+    text-align: center;
+  }
+
   #slider-footer {
     display: flex;
     justify-content: space-between;
